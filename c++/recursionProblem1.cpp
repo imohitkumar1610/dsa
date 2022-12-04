@@ -1,3 +1,5 @@
+// print the name 5 times using recursion
+// time compexity would be O(n)
 #include<bits/stdc++.h>
 using namespace std ;
 void printName(int);
