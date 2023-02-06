@@ -17,6 +17,21 @@ void reverse(char name[],int n){
     }
 }
 
+ bool checkPalindrome(char name[] , int n){
+    int s = 0;
+    int e = n -1;
+    while(s<=e){
+        if(name[s] == name[e]){
+            s++;
+            e--;
+        }
+        else{
+         return 0;
+         }
+    }
+    return 1;
+ }
+
 int main(){
  char name[20];
  cout<<"enter the name ;"<<endl;
@@ -32,6 +47,9 @@ int len = getLength(name);
  cout<<getLength(name)<<endl;
  reverse(name,len);
  cout<<name<<endl;
+ cout<< checkPalindrome(name,len)<<endl;;
+
+
 
     return 0;
 }
